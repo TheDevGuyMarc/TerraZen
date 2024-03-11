@@ -130,3 +130,7 @@ If you need any technical or functional support don't hesitate to write us an em
 
 ## References
 - [Golang Rest API](https://dev.to/koddr/build-a-restful-api-on-go-fiber-postgresql-jwt-and-swagger-docs-in-isolated-docker-containers-475j)
+- [Drivers](https://github.com/reef-pi/drivers)
+- [Hardware Access Layer](https://github.com/reef-pi/hal)
+- [Unit & Integration Testing](https://medium.com/@victorsteven/understanding-unit-and-integrationtesting-in-golang-ba60becb778d)
+- [Golang Mail Sending](https://medium.com/@victorsteven/sending-and-faking-emails-with-custom-templates-in-golang-15a017c191ec)
