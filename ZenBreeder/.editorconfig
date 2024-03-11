@@ -1,0 +1,50 @@
+# Editor configuration, see http://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Java indentation settings
+[*.java]
+indent_style = space
+indent_size = 4
+
+# TypeScript indentation settings
+[*.ts]
+indent_style = space
+indent_size = 2
+
+# TypeScript React indentation settings
+[*.tsx]
+indent_style = space
+indent_size = 2
+
+# JavaScript React indentation settings
+[*.{js,jsx}]
+indent_style = space
+indent_size = 2
+
+# CSS indentation settings
+[*.{css,scss}]
+indent_style = space
+indent_size = 2
+
+# HTML indentation settings
+[*.html]
+indent_style = space
+indent_size = 2
+
+# Markdown indentation settings
+[*.md]
+indent_style = space
+indent_size = 2
+
+# Trim trailing whitespace
+trim_trailing_whitespace = true
+
+# Ensure a single trailing newline at the end of all files
+insert_final_newline = true
