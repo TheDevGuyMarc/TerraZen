@@ -1,9 +1,9 @@
-package de.terrazen.zenbreeder.tank.service;
+package de.terrazen.zenbreeder.enclosure.service;
 
-import de.terrazen.zenbreeder.tank.domain.Enclosure;
-import de.terrazen.zenbreeder.tank.exception.EnclosureNotFoundException;
-import de.terrazen.zenbreeder.tank.repository.EnclosureEntity;
-import de.terrazen.zenbreeder.tank.repository.EnclosureRepository;
+import de.terrazen.zenbreeder.enclosure.domain.Enclosure;
+import de.terrazen.zenbreeder.enclosure.exception.EnclosureNotFoundException;
+import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
+import de.terrazen.zenbreeder.enclosure.repository.EnclosureRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

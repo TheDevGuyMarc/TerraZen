@@ -1,4 +1,4 @@
-package de.terrazen.zenbreeder.tank.exception;
+package de.terrazen.zenbreeder.enclosure.exception;
 
 import lombok.NoArgsConstructor;
 

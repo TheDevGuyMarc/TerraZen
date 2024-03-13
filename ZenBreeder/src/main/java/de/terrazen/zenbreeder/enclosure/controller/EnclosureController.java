@@ -1,7 +1,7 @@
-package de.terrazen.zenbreeder.tank.controller;
+package de.terrazen.zenbreeder.enclosure.controller;
 
-import de.terrazen.zenbreeder.tank.domain.Enclosure;
-import de.terrazen.zenbreeder.tank.service.EnclosureService;
+import de.terrazen.zenbreeder.enclosure.domain.Enclosure;
+import de.terrazen.zenbreeder.enclosure.service.EnclosureService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;

@@ -1,4 +1,4 @@
-package de.terrazen.zenbreeder.tank.repository;
+package de.terrazen.zenbreeder.enclosure.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
