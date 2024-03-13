@@ -9,12 +9,12 @@ import java.util.Date;
 @Getter
 @AllArgsConstructor
 public class BreedingGroupDTO {
-    private Long id;
-    private String name;
-    private String description;
-    private Date paired_at;
-    private int animal_amount;
-    private String notes; // TODO: Move to relation
+    private final Long id;
+    private final String name;
+    private final String description;
+    private final Date paired_at;
+    private final int animal_amount;
+    private final String notes; // TODO: Move to relation
 
     /* TODO: Implement n-1 relation to EnclosureEntity */
     /* TODO: Implement 1-n relation to AnimalEntity (Group Members) */

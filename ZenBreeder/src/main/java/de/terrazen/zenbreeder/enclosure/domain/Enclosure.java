@@ -1,6 +1,6 @@
-package de.terrazen.zenbreeder.tank.domain;
+package de.terrazen.zenbreeder.enclosure.domain;
 
-import de.terrazen.zenbreeder.tank.repository.EnclosureEntity;
+import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
