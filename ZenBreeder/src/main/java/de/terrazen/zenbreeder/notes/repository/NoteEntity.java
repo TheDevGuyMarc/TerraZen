@@ -1,5 +1,7 @@
 package de.terrazen.zenbreeder.notes.repository;
 
+import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
+import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import de.terrazen.zenbreeder.notes.domain.Note;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -32,7 +34,9 @@ public class NoteEntity {
     @Column
     private Date updated_at;
 
-    /* TODO: Implement n-1 relation to Breeding Group */
+    @ManyToOne
+    @JoinColumn(name = "breedingGroup_id", referencedColumnName = "id")
+    private BreedingGroupEntity breedingGroup;
 
     public NoteEntity(Note model) {
         this.id = model.getId();
@@ -40,5 +44,6 @@ public class NoteEntity {
         this.note = model.getNote();
         this.created_at = model.getCreated_at();
         this.updated_at = model.getUpdated_at();
+        this.breedingGroup = new BreedingGroupEntity(model.getBreedingGroup());
     }
 }

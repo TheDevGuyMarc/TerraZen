@@ -49,6 +49,10 @@ public class AnimalService {
             updatedElement.setSize(animal.getSize());
             updatedElement.setBehaviour(animal.getBehaviour());
             updatedElement.setEgg_feeder(animal.isEgg_feeder());
+            updatedElement.setBreedingGroup(animal.getBreedingGroup());
+            updatedElement.setParentGroup(animal.getParentGroup());
+            updatedElement.setSpecies(animal.getSpecies());
+            updatedElement.setTraits(animal.getTraits());
 
             return new Animal(this.animalRepository.saveAndFlush(new AnimalEntity(updatedElement)));
         }

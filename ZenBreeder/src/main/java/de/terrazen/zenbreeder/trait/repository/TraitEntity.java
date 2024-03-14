@@ -1,11 +1,15 @@
 package de.terrazen.zenbreeder.trait.repository;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import de.terrazen.zenbreeder.animal.repository.AnimalEntity;
 import de.terrazen.zenbreeder.trait.domain.Trait;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Table(name = "traits")
@@ -42,7 +46,9 @@ public class TraitEntity {
     @Column
     private boolean recessive;
 
-    /* TODO: Implement n-1 relation to Animal */
+    @ManyToMany(mappedBy = "traits")
+    @JsonBackReference
+    private List<AnimalEntity> animals;
 
     public TraitEntity(Trait model) {
         this.id = model.getId();
@@ -54,5 +60,6 @@ public class TraitEntity {
         this.coDominant = model.isCoDominant();
         this.dominant = model.isDominant();
         this.recessive = model.isRecessive();
+        this.animals = model.getAnimals().stream().map(AnimalEntity::new).toList();
     }
 }

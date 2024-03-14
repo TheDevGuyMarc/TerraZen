@@ -43,6 +43,7 @@ public class SpeciesService {
             updatedElement.setId(species.getId());
             updatedElement.setName(species.getName());
             updatedElement.setDescription(species.getDescription());
+            updatedElement.setAnimals(species.getAnimals());
 
             return new Species(this.speciesRepository.saveAndFlush(new SpeciesEntity(updatedElement)));
         }

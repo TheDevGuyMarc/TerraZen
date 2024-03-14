@@ -44,6 +44,7 @@ public class ClutchService {
             updatedElement.setName(clutch.getName());
             updatedElement.setCondition(clutch.getCondition());
             updatedElement.setEgg_amount(clutch.getEgg_amount());
+            updatedElement.setBreedingGroup(clutch.getBreedingGroup());
 
             return new Clutch(this.clutchRepository.saveAndFlush(new ClutchEntity(updatedElement)));
         }

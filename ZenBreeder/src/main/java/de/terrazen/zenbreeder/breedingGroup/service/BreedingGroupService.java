@@ -45,6 +45,11 @@ public class BreedingGroupService {
             updatedElement.setDescription(breedingGroup.getDescription());
             updatedElement.setPaired_at(breedingGroup.getPaired_at());
             updatedElement.setAnimal_amount(breedingGroup.getAnimal_amount());
+            updatedElement.setEnclosure(breedingGroup.getEnclosure());
+            updatedElement.setAnimals(breedingGroup.getAnimals());
+            updatedElement.setClutches(breedingGroup.getClutches());
+            updatedElement.setOffspring(breedingGroup.getOffspring());
+            updatedElement.setNotes(breedingGroup.getNotes());
 
             return new BreedingGroup(this.breedingGroupRepository.saveAndFlush(new BreedingGroupEntity(updatedElement)));
         }

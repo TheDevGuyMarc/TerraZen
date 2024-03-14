@@ -1,11 +1,20 @@
 package de.terrazen.zenbreeder.animal.domain;
 
 import de.terrazen.zenbreeder.animal.repository.AnimalEntity;
+import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
+import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
+import de.terrazen.zenbreeder.species.domain.Species;
+import de.terrazen.zenbreeder.species.repository.SpeciesEntity;
+import de.terrazen.zenbreeder.trait.domain.Trait;
+import de.terrazen.zenbreeder.trait.repository.TraitEntity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -20,10 +29,10 @@ public class Animal {
     private double size;
     private String behaviour;
     private boolean egg_feeder;
-
-    /* TODO: Implement n-1 relation to Breeding Group */
-    /* TODO: Implement n-1 relation to Species */
-    /* TODO: Implement n-n relation to Traits */
+    private BreedingGroup breedingGroup;
+    private BreedingGroup parentGroup;
+    private List<Species> species;
+    private List<Trait> traits;
 
     public Animal(AnimalEntity model) {
         this.id = model.getId();
@@ -35,5 +44,9 @@ public class Animal {
         this.size = model.getSize();
         this.behaviour = model.getBehaviour();
         this.egg_feeder = model.isEgg_feeder();
+        this.breedingGroup = new BreedingGroup(model.getBreedingGroup());
+        this.parentGroup = new BreedingGroup(model.getParentGroup());
+        this.species = model.getSpecies().stream().map(Species::new).toList();
+        this.traits = model.getTraits().stream().map(Trait::new).toList();
     }
 }
