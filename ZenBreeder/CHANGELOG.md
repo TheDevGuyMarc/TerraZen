@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ## [Version 0.10.0] - 14.03.2024
+### Added
+- Implementing Dockerfile
+
 ### Changed
 - Removing unused imports
 - Fixing a wrong usage of property types in AnimalDTO

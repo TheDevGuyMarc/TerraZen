@@ -13,7 +13,6 @@ This also helps keeping track and reminding you what needs to be done.
 - Spring Security
 - PostgreSQL
 - Redis
-- GSON
 - Lombok
 - Tinylog
 
@@ -35,7 +34,7 @@ Keep in mind that this is the overall Roadmap, for the specific Roadmap look in 
 
 ## Installation
 
-If you want to install ZenLexicon Locally you need some prerequisites to make this work.
+If you want to install ZenBreeder Locally you need some prerequisites to make this work.
 
 ### Docker Way
 
