@@ -1,7 +1,6 @@
 package de.terrazen.zenbreeder.notes.repository;
 
 import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
-import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import de.terrazen.zenbreeder.notes.domain.Note;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

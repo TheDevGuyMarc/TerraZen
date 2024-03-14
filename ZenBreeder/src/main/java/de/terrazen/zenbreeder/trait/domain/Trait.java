@@ -1,7 +1,6 @@
 package de.terrazen.zenbreeder.trait.domain;
 
 import de.terrazen.zenbreeder.animal.domain.Animal;
-import de.terrazen.zenbreeder.animal.repository.AnimalEntity;
 import de.terrazen.zenbreeder.trait.repository.TraitEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

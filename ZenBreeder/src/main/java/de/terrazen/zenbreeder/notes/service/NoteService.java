@@ -1,6 +1,5 @@
 package de.terrazen.zenbreeder.notes.service;
 
-import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
 import de.terrazen.zenbreeder.notes.domain.Note;
 import de.terrazen.zenbreeder.notes.exception.NoteNotFoundException;
 import de.terrazen.zenbreeder.notes.repository.NoteEntity;

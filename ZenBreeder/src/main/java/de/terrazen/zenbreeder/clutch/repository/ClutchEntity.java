@@ -2,7 +2,6 @@ package de.terrazen.zenbreeder.clutch.repository;
 
 import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
 import de.terrazen.zenbreeder.clutch.domain.Clutch;
-import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

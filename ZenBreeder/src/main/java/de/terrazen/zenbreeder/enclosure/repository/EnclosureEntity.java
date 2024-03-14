@@ -1,6 +1,5 @@
 package de.terrazen.zenbreeder.enclosure.repository;
 
-import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
 import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
 import de.terrazen.zenbreeder.enclosure.domain.Enclosure;
 import jakarta.persistence.*;

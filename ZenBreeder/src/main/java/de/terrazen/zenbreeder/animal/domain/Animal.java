@@ -2,13 +2,8 @@ package de.terrazen.zenbreeder.animal.domain;
 
 import de.terrazen.zenbreeder.animal.repository.AnimalEntity;
 import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
-import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
 import de.terrazen.zenbreeder.species.domain.Species;
-import de.terrazen.zenbreeder.species.repository.SpeciesEntity;
 import de.terrazen.zenbreeder.trait.domain.Trait;
-import de.terrazen.zenbreeder.trait.repository.TraitEntity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

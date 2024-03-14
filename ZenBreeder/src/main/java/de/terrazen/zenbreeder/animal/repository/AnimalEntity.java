@@ -2,7 +2,6 @@ package de.terrazen.zenbreeder.animal.repository;
 
 import de.terrazen.zenbreeder.animal.domain.Animal;
 import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
-import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import de.terrazen.zenbreeder.species.repository.SpeciesEntity;
 import de.terrazen.zenbreeder.trait.repository.TraitEntity;
 import jakarta.persistence.*;
