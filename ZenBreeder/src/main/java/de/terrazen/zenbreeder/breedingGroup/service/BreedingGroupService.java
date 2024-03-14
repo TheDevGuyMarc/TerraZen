@@ -43,7 +43,6 @@ public class BreedingGroupService {
             updatedElement.setId(breedingGroup.getId());
             updatedElement.setName(breedingGroup.getName());
             updatedElement.setDescription(breedingGroup.getDescription());
-            updatedElement.setNotes(breedingGroup.getNotes());
             updatedElement.setPaired_at(breedingGroup.getPaired_at());
             updatedElement.setAnimal_amount(breedingGroup.getAnimal_amount());
 

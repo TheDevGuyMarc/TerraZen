@@ -14,12 +14,12 @@ public class BreedingGroupDTO {
     private final String description;
     private final Date paired_at;
     private final int animal_amount;
-    private final String notes; // TODO: Move to relation
 
     /* TODO: Implement n-1 relation to EnclosureEntity */
     /* TODO: Implement 1-n relation to AnimalEntity (Group Members) */
     /* TODO: Implement 1-n relation to ClutchEntity */
     /* TODO: Implement n-1 relation to AnimalEntity (Offspring) */
+    /* TODO: Implement 1-n relation to NoteEntity */
 
 
     public BreedingGroupDTO(BreedingGroup model) {
@@ -28,6 +28,5 @@ public class BreedingGroupDTO {
         this.description = model.getDescription();
         this.paired_at = model.getPaired_at();
         this.animal_amount = model.getAnimal_amount();
-        this.notes = model.getNotes();
     }
 }
