@@ -32,13 +32,11 @@ public class BreedingGroupEntity {
     @Column
     private int animal_amount;
 
-    @Column
-    private String notes; // TODO: Move to relation
-
     /* TODO: Implement n-1 relation to EnclosureEntity */
     /* TODO: Implement 1-n relation to AnimalEntity (Group Members) */
     /* TODO: Implement 1-n relation to ClutchEntity */
     /* TODO: Implement n-1 relation to AnimalEntity (Offspring) */
+    /* TODO: Implement 1-n relation to NoteEntity */
 
     public BreedingGroupEntity(BreedingGroup model) {
         this.id = model.getId();
@@ -46,6 +44,5 @@ public class BreedingGroupEntity {
         this.description = model.getDescription();
         this.paired_at = model.getPaired_at();
         this.animal_amount = model.getAnimal_amount();
-        this.notes = model.getNotes();
     }
 }

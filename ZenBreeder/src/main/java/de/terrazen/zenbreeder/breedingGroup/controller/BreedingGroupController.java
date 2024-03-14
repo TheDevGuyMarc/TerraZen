@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/enclosures")
+@RequestMapping("/breeding-groups")
 public class BreedingGroupController {
     private final BreedingGroupService breedingGroupService;
 

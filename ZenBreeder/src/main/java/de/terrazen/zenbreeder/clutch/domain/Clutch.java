@@ -1,7 +1,6 @@
 package de.terrazen.zenbreeder.clutch.domain;
 
 import de.terrazen.zenbreeder.clutch.repository.ClutchEntity;
-import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
