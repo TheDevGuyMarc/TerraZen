@@ -1,5 +1,6 @@
 package de.terrazen.zenbreeder.notes.service;
 
+import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
 import de.terrazen.zenbreeder.notes.domain.Note;
 import de.terrazen.zenbreeder.notes.exception.NoteNotFoundException;
 import de.terrazen.zenbreeder.notes.repository.NoteEntity;
@@ -45,6 +46,7 @@ public class NoteService {
             updatedElement.setNote(note.getNote());
             updatedElement.setCreated_at(note.getCreated_at());
             updatedElement.setUpdated_at(note.getUpdated_at());
+            updatedElement.setBreedingGroup(note.getBreedingGroup());
 
             return new Note(this.noteRepository.saveAndFlush(new NoteEntity(updatedElement)));
         }

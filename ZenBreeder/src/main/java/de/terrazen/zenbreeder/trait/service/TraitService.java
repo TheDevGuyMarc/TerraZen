@@ -49,6 +49,7 @@ public class TraitService {
             updatedElement.setCoDominant(trait.isCoDominant());
             updatedElement.setDominant(trait.isDominant());
             updatedElement.setRecessive(trait.isRecessive());
+            updatedElement.setAnimals(trait.getAnimals());
 
             return new Trait(this.traitRepository.saveAndFlush(new TraitEntity(updatedElement)));
         }

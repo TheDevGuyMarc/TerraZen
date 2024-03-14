@@ -1,9 +1,13 @@
 package de.terrazen.zenbreeder.trait.domain;
 
+import de.terrazen.zenbreeder.animal.domain.Animal;
+import de.terrazen.zenbreeder.animal.repository.AnimalEntity;
 import de.terrazen.zenbreeder.trait.repository.TraitEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -18,8 +22,7 @@ public class Trait {
     private boolean coDominant;
     private boolean dominant;
     private boolean recessive;
-
-    /* TODO: Implement n-1 relation to Animal */
+    private List<Animal> animals;
 
     public Trait(TraitEntity model) {
         this.id = model.getId();
@@ -31,5 +34,6 @@ public class Trait {
         this.coDominant = model.isCoDominant();
         this.dominant = model.isDominant();
         this.recessive = model.isRecessive();
+        this.animals = model.getAnimals().stream().map(Animal::new).toList();
     }
 }

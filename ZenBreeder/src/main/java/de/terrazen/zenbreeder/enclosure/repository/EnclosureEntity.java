@@ -1,11 +1,15 @@
 package de.terrazen.zenbreeder.enclosure.repository;
 
+import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
+import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
 import de.terrazen.zenbreeder.enclosure.domain.Enclosure;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Table(name = "enclosures")
@@ -39,7 +43,8 @@ public class EnclosureEntity {
     @Column
     private double humidity;
 
-    /* TODO: Implement 1-n relation to BreedingGroupEntity */
+    @OneToMany(mappedBy = "enclosure", cascade = CascadeType.ALL)
+    private List<BreedingGroupEntity> breedingGroups;
 
     public EnclosureEntity(Enclosure model) {
         this.id = model.getId();
@@ -50,5 +55,6 @@ public class EnclosureEntity {
         this.depth = model.getDepth();
         this.temperature = model.getTemperature();
         this.humidity = model.getHumidity();
+        this.breedingGroups = model.getBreedingGroups().stream().map(BreedingGroupEntity::new).toList();
     }
 }

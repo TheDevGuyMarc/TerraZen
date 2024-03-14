@@ -1,5 +1,6 @@
 package de.terrazen.zenbreeder.notes.domain;
 
+import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
 import de.terrazen.zenbreeder.notes.repository.NoteEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,8 +17,7 @@ public class Note {
     private String note;
     private Date created_at;
     private Date updated_at;
-
-    /* TODO: Implement n-1 relation to Breeding Group */
+    private BreedingGroup breedingGroup;
 
     public Note(NoteEntity model) {
         this.id = model.getId();
@@ -25,5 +25,6 @@ public class Note {
         this.note = model.getNote();
         this.created_at = model.getCreated_at();
         this.updated_at = model.getUpdated_at();
+        this.breedingGroup = new BreedingGroup(model.getBreedingGroup());
     }
 }

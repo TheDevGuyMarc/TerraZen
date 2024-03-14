@@ -1,8 +1,11 @@
 package de.terrazen.zenbreeder.enclosure.controller;
 
+import de.terrazen.zenbreeder.breedingGroup.controller.BreedingGroupDTO;
 import de.terrazen.zenbreeder.enclosure.domain.Enclosure;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+
+import java.util.List;
 
 @Getter
 @AllArgsConstructor
@@ -15,8 +18,7 @@ public class EnclosureDTO {
     private final double depth;
     private final double temperature;
     private final double humidity;
-
-    /* TODO: Implement 1-n relation to BreedingGroupDTO */
+    private final List<BreedingGroupDTO> breedingGroups;
 
     public EnclosureDTO(Enclosure model) {
         this.id = model.getId();
@@ -27,5 +29,6 @@ public class EnclosureDTO {
         this.depth = model.getDepth();
         this.temperature = model.getTemperature();
         this.humidity = model.getHumidity();
+        this.breedingGroups = model.getBreedingGroups().stream().map(BreedingGroupDTO::new).toList();
     }
 }

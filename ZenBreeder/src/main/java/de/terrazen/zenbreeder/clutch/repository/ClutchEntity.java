@@ -1,6 +1,8 @@
 package de.terrazen.zenbreeder.clutch.repository;
 
+import de.terrazen.zenbreeder.breedingGroup.repository.BreedingGroupEntity;
 import de.terrazen.zenbreeder.clutch.domain.Clutch;
+import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,13 +29,15 @@ public class ClutchEntity {
     @Column
     private int egg_amount;
 
-
-    /* TODO: Implement n-1 relation to BreedingGroupEntity */
+    @ManyToOne
+    @JoinColumn(name = "breedingGroup_id", referencedColumnName = "id")
+    private BreedingGroupEntity breedingGroup;
 
     public ClutchEntity(Clutch model) {
         this.id = model.getId();
         this.name = model.getName();
         this.condition = model.getCondition();
         this.egg_amount = model.getEgg_amount();
+        this.breedingGroup = new BreedingGroupEntity(model.getBreedingGroup());
     }
 }

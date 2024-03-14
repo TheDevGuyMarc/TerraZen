@@ -48,6 +48,7 @@ public class EnclosureService {
             updatedElement.setHabitat(enclosure.getHabitat());
             updatedElement.setTemperature(enclosure.getTemperature());
             updatedElement.setHumidity(enclosure.getHumidity());
+            updatedElement.setBreedingGroups(enclosure.getBreedingGroups());
 
             return new Enclosure(this.enclosureRepository.saveAndFlush(new EnclosureEntity(updatedElement)));
         }

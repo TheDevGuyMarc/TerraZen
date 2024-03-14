@@ -1,9 +1,12 @@
 package de.terrazen.zenbreeder.enclosure.domain;
 
+import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
 import de.terrazen.zenbreeder.enclosure.repository.EnclosureEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,8 +20,7 @@ public class Enclosure {
     private double depth;
     private double temperature;
     private double humidity;
-
-    /* TODO: Implement 1-n relation to BreedingGroup */
+    private List<BreedingGroup> breedingGroups;
 
     public Enclosure(EnclosureEntity model) {
         this.id = model.getId();
@@ -29,5 +31,6 @@ public class Enclosure {
         this.depth = model.getDepth();
         this.temperature = model.getTemperature();
         this.humidity = model.getHumidity();
+        this.breedingGroups = model.getBreedingGroups().stream().map(BreedingGroup::new).toList();
     }
 }
