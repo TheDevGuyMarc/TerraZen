@@ -2,13 +2,8 @@ package de.terrazen.zenbreeder.animal.controller;
 
 import de.terrazen.zenbreeder.animal.domain.Animal;
 import de.terrazen.zenbreeder.breedingGroup.controller.BreedingGroupDTO;
-import de.terrazen.zenbreeder.breedingGroup.domain.BreedingGroup;
 import de.terrazen.zenbreeder.species.controller.SpeciesDTO;
-import de.terrazen.zenbreeder.species.domain.Species;
-import de.terrazen.zenbreeder.species.repository.SpeciesEntity;
 import de.terrazen.zenbreeder.trait.controller.TraitDTO;
-import de.terrazen.zenbreeder.trait.domain.Trait;
-import de.terrazen.zenbreeder.trait.repository.TraitEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -29,8 +24,8 @@ public class AnimalDTO {
     private final boolean egg_feeder;
     private final BreedingGroupDTO breedingGroup;
     private final BreedingGroupDTO parentGroup;
-    private final List<Species> species;
-    private final List<Trait> traits;
+    private final List<SpeciesDTO> species;
+    private final List<TraitDTO> traits;
 
     public AnimalDTO(Animal model) {
         this.id = model.getId();
