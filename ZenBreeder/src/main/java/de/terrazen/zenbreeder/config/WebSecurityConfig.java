@@ -16,6 +16,12 @@ public class WebSecurityConfig {
         "/swagger-resources"
     };
 
+    /**
+     * TODO: Monitor this because csrf() and httpBasic() are deprecated soon enough
+     * @param http
+     * @return
+     * @throws Exception
+     */
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
         http

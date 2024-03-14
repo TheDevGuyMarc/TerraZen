@@ -1,6 +1,5 @@
 package de.terrazen.zenbreeder.trait.repository;
 
-import de.terrazen.zenbreeder.enclosure.domain.Enclosure;
 import de.terrazen.zenbreeder.trait.domain.Trait;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

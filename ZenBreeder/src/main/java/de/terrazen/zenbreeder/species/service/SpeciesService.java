@@ -4,10 +4,6 @@ import de.terrazen.zenbreeder.species.domain.Species;
 import de.terrazen.zenbreeder.species.exception.SpeciesNotFoundException;
 import de.terrazen.zenbreeder.species.repository.SpeciesEntity;
 import de.terrazen.zenbreeder.species.repository.SpeciesRepository;
-import de.terrazen.zenbreeder.trait.domain.Trait;
-import de.terrazen.zenbreeder.trait.exception.TraitNotFoundException;
-import de.terrazen.zenbreeder.trait.repository.TraitEntity;
-import de.terrazen.zenbreeder.trait.repository.TraitRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

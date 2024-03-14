@@ -1,7 +1,6 @@
 package de.terrazen.zenbreeder.animal.repository;
 
 import de.terrazen.zenbreeder.animal.domain.Animal;
-import de.terrazen.zenbreeder.species.domain.Species;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
