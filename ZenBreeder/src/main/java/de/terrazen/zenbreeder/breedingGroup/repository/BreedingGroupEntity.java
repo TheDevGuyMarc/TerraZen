@@ -47,7 +47,7 @@ public class BreedingGroupEntity {
     @OneToMany(mappedBy = "breedingGroup", cascade = CascadeType.ALL)
     private List<ClutchEntity> clutches;
 
-    @OneToMany(mappedBy = "breedingGroupOffspring", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "parentGroup", cascade = CascadeType.ALL)
     private List<AnimalEntity> offspring;
 
     @OneToMany(mappedBy = "breedingGroup", cascade = CascadeType.ALL)

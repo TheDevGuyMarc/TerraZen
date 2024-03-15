@@ -53,7 +53,7 @@ public class AnimalEntity {
     private BreedingGroupEntity breedingGroup;
 
     @ManyToOne
-    @JoinColumn(name = "breedingGroupOffspring_id", referencedColumnName = "id")
+    @JoinColumn(name = "parentGroup_id", referencedColumnName = "id")
     private BreedingGroupEntity parentGroup;
 
     @ManyToMany
