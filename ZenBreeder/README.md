@@ -13,7 +13,6 @@ This also helps keeping track and reminding you what needs to be done.
 - Spring Security
 - PostgreSQL
 - Redis
-- GSON
 - Lombok
 - Tinylog
 
@@ -35,7 +34,7 @@ Keep in mind that this is the overall Roadmap, for the specific Roadmap look in 
 
 ## Installation
 
-If you want to install ZenLexicon Locally you need some prerequisites to make this work.
+If you want to install ZenBreeder  Locally you need some prerequisites to make this work.
 
 ### Docker Way
 
@@ -53,19 +52,19 @@ If you want to install ZenLexicon Locally you need some prerequisites to make th
 ### Run Local DEV Environment
 
 ```shell
-  podman-compose -f dev-podman-compose.yml up
+  docker-compose -f docker-compose.dev.yml up
 ```
 
 ### Run Local UAT Environment
 
 ```shell
-  podman-compose -f uat-podman-compose.yml up
+  docker-compose -f docker-compose.test.yml up
 ```
 
 ### Run Local PROD Environment
 
 ```shell
-  podman-compose -f prod-podman-compose.yml up
+  docker-compose -f docker-compose.prod.yml up
 ```
 
 ## Tests
@@ -165,11 +164,11 @@ You can find the [official documentation](#) on our website for usage examples a
 
 ## FAQ
 
-### Is ZenLexicon Free ?
+### Is ZenBreeder Free ?
 
 Yes for now ZenBreeder is totally free, that might change at a later point though but don't worry if you made a free account you will be free forever.
 
-### Is ZenLexicon for Aquariums and Terrariums ?
+### Is ZenBreeder for Aquariums and Terrariums ?
 
 For now ZenBreeder will only support vertebrate animals in the terrarium/paludarium section, that might change later on if we get enough reliable data.
 
