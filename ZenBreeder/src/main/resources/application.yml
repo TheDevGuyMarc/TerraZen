@@ -22,3 +22,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+# ===============================
+# = SpringDocs
+# ===============================
+
+springdoc:
+  show-actuator: true

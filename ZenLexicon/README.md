@@ -13,7 +13,6 @@ care sheets, infos, and much more to know about the little ones you are caring f
 - Spring Security
 - PostgreSQL
 - Redis
-- GSON
 - Lombok
 - Tinylog
 
@@ -53,19 +52,19 @@ If you want to install ZenLexicon Locally you need some prerequisites to make th
 ### Run Local DEV Environment
 
 ```shell
-  podman-compose -f dev-podman-compose.yml up
+  docker-compose -f docker-compose.dev.yml up
 ```
 
 ### Run Local UAT Environment
 
 ```shell
-  podman-compose -f uat-podman-compose.yml up
+  docker-compose -f docker-compose.test.yml up
 ```
 
 ### Run Local PROD Environment
 
 ```shell
-  podman-compose -f prod-podman-compose.yml up
+  docker-compose -f docker-compose.prod.yml up
 ```
 
 ## Tests
