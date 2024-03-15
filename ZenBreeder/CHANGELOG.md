@@ -123,3 +123,7 @@ All notable changes to this project will be documented in this file.
 - Fixing a wrong usage of property types in AnimalDTO
 - Implementing Changelog regularly from now on
 - Changing version in pom.xml to correct semver version
+
+### Fixed
+
+- Relation bug between Animals and BreedingGroups (naming mismatch)
