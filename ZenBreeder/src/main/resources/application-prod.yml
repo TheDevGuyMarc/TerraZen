@@ -1,0 +1,38 @@
+# ===============================
+# = DATA SOURCE
+# ===============================
+# Set configurations for the database connection
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/prod_breeder
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+
+  # ===============================
+  # = JPA / HIBERNATE
+  # ===============================
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+# ===============================
+# = SpringDocs
+# ===============================
+
+springdoc:
+  show-actuator: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: warn
